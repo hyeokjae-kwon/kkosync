@@ -10,11 +10,11 @@
 </head>
 <body>
     <div>
-        <a href="javascript:requestLogin();" class="login">로그인</a>
+        <a href="javascript:baseLogin();" class="login">로그인</a>
     </div>
 
     <div>
-        <a id="btn_kkoLogin" href="#" class="kkoLogin">
+        <a id="btn_kkoLogin" href="javascript:kkoLogin();" class="kkoLogin">
             <img src="${contextPath}/img/kakao_login_medium_wide.png">
         </a>
     </div>
@@ -22,7 +22,12 @@
 
 <script>
     function requestLogin() {
-        console.log('login 요청');
+        console.log('일반 login 요청');
 	}
+
+	function kkoLogin() {
+        console.log('카카오 login 요청');
+    }
+
 </script>
 </html>
