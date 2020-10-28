@@ -19,4 +19,10 @@
         </a>
     </div>
 </body>
+
+<script>
+    function requestLogin() {
+        console.log('login 요청');
+	}
+</script>
 </html>
